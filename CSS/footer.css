@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+.footer{
+  text-align: center;
+  padding-top:     0rem;
+  padding-right:   0.5rem;
+  padding-bottom:  1rem;
+  padding-left:    0.5rem;
+
+
+}
+.footer-element{
+  font: 700 1.5rem "Poppins", "sans-serif";
+  color: #e1e1e1;
+  background-color: #222222;
+
+  border-radius: 0.5rem;
+}
