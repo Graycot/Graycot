@@ -17,6 +17,7 @@ class main extends HTMLElement {
   <div class="grid-item"></div>
   <div class="grid-item"></div>
   <div class="grid-item"></div>
+
   <div class="grid-item"></div>
   <div class="grid-item"></div>
   <div class="grid-item"></div>
@@ -25,6 +26,7 @@ class main extends HTMLElement {
   <div class="grid-item"></div>
   <div class="grid-item"></div>
   <div class="grid-item"></div>
+
   <div class="grid-item"></div>
   <div class="grid-item"></div>
   <div class="grid-item"></div>
@@ -33,12 +35,7 @@ class main extends HTMLElement {
   <div class="grid-item"></div>
   <div class="grid-item"></div>
   <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
+
 
 </div>
    

@@ -2,10 +2,13 @@
 
 .main{
   text-align: center;
+  padding: 0;
+
 }
 .main-element{
   height: 100%;
   font: 700 clamp(20px, 2.5vh, 25px)/1.3 "Poppins", "sans-serif";
+  
 }
 
 
@@ -13,8 +16,9 @@
   /**
    * User input values.
    */
-  --grid-layout-gap: 10px;
-  --grid-column-count: 10; /* This gets overridden by an inline style. */
+   padding: 15px;
+  --grid-layout-gap: 15px;
+  --grid-column-count: 6; /* This gets overridden by an inline style. */
   --grid-item--min-width: 300px; /* This gets overridden by an inline style. */
   
   /**
@@ -49,5 +53,7 @@
   min-height: 300px;
 
   color: #e1e1e1;
-  background: #3b3b3b;
+  background: #3b3b3b77;
+  border:1px solid #515151;
+  border-radius: 0.3rem;
 }
