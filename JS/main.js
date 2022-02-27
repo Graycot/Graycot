@@ -6,7 +6,7 @@ class main extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
 
-   <main class="main-element">Placeholder</main>
+   <main class="main-element"> Placeholder </main>
     `;
   }
 }

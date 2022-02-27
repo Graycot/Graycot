@@ -2,16 +2,7 @@
 
 .header{
   text-align: center;
-  padding-top:     1rem;
-  padding-right:   0.5rem;
-  padding-bottom:  0rem;
-  padding-left:    0.5rem;
-
 }
 .header-element{
-  font: 700 4rem "Poppins", "sans-serif";
-  color: #e1e1e1;
-  background-color: #222222;
-
-  border-radius: 0.5rem;
+  font: 700 clamp(40px, 5vh, 50px)/1 "Poppins", "sans-serif";
 }

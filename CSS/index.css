@@ -6,6 +6,10 @@
 .footer {grid-area: footer;}
 
 /* Layout */
+body{
+  background-color: #121212;
+}
+
 .page-wrapper{
   display: grid;
   grid-template-rows:auto 1fr auto;
@@ -16,16 +20,27 @@
   "footer"
   ;
 
-  background-color: #121212;
   height: 100vh;
-  gap: 1rem;
+  gap: clamp(12px, 1.5vh, 20px);
+
+  padding-top:     clamp(12px, 1.5vh, 20px);
+  padding-right:   clamp(12px, 1.5vh, 20px);
+  padding-bottom:  clamp(12px, 1.5vh, 20px);
+  padding-left:    clamp(12px, 1.5vh, 20px);
 }
 
 
 
 .page-item {
   height: 100%;
-  /*width:*/
+
+  color: #e1e1e1;
+  background-color: #222222;
+
+  border:1px solid #3b3b3b;
+  border-radius: 0.5rem;
+ 
+ padding: 0.4rem;
 
 
 }
