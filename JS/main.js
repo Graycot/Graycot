@@ -6,35 +6,39 @@ class main extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
 
-   <main class="main-element"> 
+   <main class="main-element" id="demo"> 
    
 <div class="grid-container">
-  <div class="grid-item">testy</div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
 
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
+  <a href="" target="_blank"><div class="grid-item"></div></a>
+  <a href="" target="_blank"><div class="grid-item"></div></a>
+  <a href="" target="_blank"><div class="grid-item"></div></a>
+  <a href="" target="_blank"><div class="grid-item"></div></a>
+  <a href="" target="_blank"><div class="grid-item"></div></a>
+  <a href="" target="_blank"><div class="grid-item"></div></a>
 
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
+  <a href="" target="_blank"><div class="grid-item"></div></a>
+  <a href="" target="_blank"><div class="grid-item"></div></a>
+  <a href="" target="_blank"><div class="grid-item"></div></a>
+  <a href="" target="_blank"><div class="grid-item"></div></a>
+  <a href="" target="_blank"><div class="grid-item"></div></a>
+  <a href="" target="_blank"><div class="grid-item"></div></a>
+
+  <a href="" target="_blank"><div class="grid-item"></div></a>
+  <a href="" target="_blank"><div class="grid-item"></div></a>
+  <a href="" target="_blank"><div class="grid-item"></div></a>
+  <a href="" target="_blank"><div class="grid-item"></div></a>
+  <a href="" target="_blank"><div class="grid-item"></div></a>
+  <a href="" target="_blank"><div class="grid-item"></div></a>
+
+  <a href="" target="_blank"><div class="grid-item"></div></a>
+  <a href="" target="_blank"><div class="grid-item"></div></a>
+  <a href="" target="_blank"><div class="grid-item"></div></a>
+  <a href="" target="_blank"><div class="grid-item"></div></a>
+  <a href="" target="_blank"><div class="grid-item"></div></a>
+  <a href="" target="_blank"><div class="grid-item"></div></a>
+
+  
 
 
 </div>
@@ -44,5 +48,5 @@ class main extends HTMLElement {
     `;
   }
 }
-
 customElements.define('main-component', main);
+
