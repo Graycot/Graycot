@@ -12,29 +12,25 @@ for (i = 0; i < sites.length; i++) {
   }
 }
 
+let previousIndex = (thisIndex-1 < 0) ? sites.length-1 : thisIndex-1;
+let nextIndex = (thisIndex+1 >= sites.length) ? 0 : thisIndex+1;
+
 const params = new Proxy(new URLSearchParams(window.location.search), {
   get: (searchParams, prop) => searchParams.get(prop),
 });
-// Get the value of "action" in eg "https://example.com/?action=some_value"
-let value = params.action; // "some_value"
-console.log(value);
-
-if (value == 'prev') {
-  console.log('prev value');
-} else if (value == 'next') {
-  console.log('next value');
-} else {
-  console.log('error value');
-}
-
-/*
+let value = params.action;
 
 if (thisIndex == null) {
-  window.location.href = 'https://graycot.com/webring/error.html';
-}
-else{
-  let nextIndex = (thisIndex+1 >= sites.length) ? 0 : thisIndex+1;
-  window.location.href = sites[nextIndex];
+  window.location.href = 'https://graycot.com/webring/error.html?error=thisIndexIsNull';
+
+} else {
+
+  if (value == 'prev') {
+      window.location.href = sites[previousIndex];
+  } else if (value == 'next') {
+      window.location.href = sites[nextIndex];
+  } else {
+      window.location.href = 'https://graycot.com/webring/error.html?error=thisValueIsNull';
+  }
 }
 
-*/
