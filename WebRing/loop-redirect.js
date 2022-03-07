@@ -19,7 +19,13 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
 let value = params.action; // "some_value"
 console.log(value);
 
-
+if (value == 'prev') {
+  console.log('prev value');
+} else if (value == 'next') {
+  console.log('next value');
+} else {
+  console.log('error value');
+}
 
 /*
 
