@@ -39,7 +39,7 @@ else {
   tag.insertAdjacentHTML('afterbegin', ` 
     <div id="LoopRingWrapper">
       <a href='${sites[previousIndex]}'> < </a>
-      <a href="https://graystea.neocities.org">Loop Ring</a>
+      <a href="https://graycot.com/webring/index.html">Loop Ring</a>
       <a href='${sites[nextIndex]}'> > </a>
     </div>
   `);
