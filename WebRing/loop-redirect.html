@@ -6,19 +6,27 @@
   <title>Loop Ring Redirect</title>
   <div id="LoopRing"><script src="./loop-redirect.js" type="module"></script></div>
   <style>
+    html {
+      height: 100%;
+    }
     html *{
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
     body {
+      height: 100%;
       background-color: #222222;
-      border:3px solid #3b3b3b;
-      border-radius: 0.5rem;
+    }
+    .page-wrapper{
+      height: 100%;
+      border:5px solid #3b3b3b;
+      border-radius: 10px;
     }
   </style>
 </head>
 <body>
-
+  <div class="page-wrapper"></div>
 </body>
 </html>
 
