@@ -5,9 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Loop Ring Redirect</title>
   <div id="LoopRing"><script src="./loop-redirect.js" type="module"></script></div>
+  <style>
+    html *{
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #222222;
+      color: #e1e1e1;
+      font-family:Helvetica, sans-serif;
+    }
+    div{
+      display: flex;
+    }
+    a {
+      color: #e1e1e1;
+      margin: 50px auto 0 auto;
+      padding: 0.5rem 2rem;
+      border: 1px solid #e1e1e1;
+      border-radius: 100px;
+      text-decoration: none;
+    }
+    a:hover{
+      color: #acacac;
+    }
+
+  </style>
 </head>
 <body>
-  <a href="/index.html"><h1>Loop Ring Redirect</h1></a>
-  <p>Hello! This page is the Loop Ring middle man between the site you were just on, and the next Loop Ring site you should be redirected to. If you are reading this, then that means that something went SERIOUSLY wrong. Please Contact Gray at DrEarlGray@gmail.com to let me know the webring redirect broke. Thank you!</p>
+  <div><a href="/error.html?error=userClick"><h1>Loop Ring Redirect</h1></a></div>
 </body>
 </html>
+
+
