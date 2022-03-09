@@ -29,7 +29,7 @@ for (i = 0; i < sites.length; i++) {
 
 if (thisIndex == null) {
   tag.insertAdjacentHTML('afterbegin', `
-    <div id="LoopRingWrapper Veto"><p>Not yet in the loop!</p></div>
+    <div id="LoopRingWrapper" class="OverRide"><p>Not yet in the loop!</p></div>
   `);
 }
 else {
@@ -37,7 +37,7 @@ else {
   let nextIndex = (thisIndex+1 >= sites.length) ? 0 : thisIndex+1;
 
   tag.insertAdjacentHTML('afterbegin', ` 
-    <div id="LoopRingWrapper Veto">
+    <div id="LoopRingWrapper" class="OverRide">
       <a href='${sites[previousIndex]}'> < </a>
       <a href="https://graycot.com/webring/index.html">Loop Ring</a>
       <a href='${sites[nextIndex]}'> > </a>
