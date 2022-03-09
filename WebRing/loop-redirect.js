@@ -21,7 +21,7 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
 let value = params.action;
 
 if (thisIndex == null) {
-  window.location.href = 'https://graycot.com/webring/error.html?error=thisIndexIsNull';
+  window.location.href = 'https://graycot.com/webring/error.html?error=NullIndex';
 
 } else {
 
@@ -29,8 +29,10 @@ if (thisIndex == null) {
       window.location.href = sites[previousIndex];
   } else if (value == 'next') {
       window.location.href = sites[nextIndex];
+  } else if (value == 'home') {
+      window.location.href = 'https://graycot.com/webring/index.html';
   } else {
-      window.location.href = 'https://graycot.com/webring/error.html?error=thisValueIsNull';
+      window.location.href = 'https://graycot.com/webring/error.html?error=NullValue';
   }
 }
 

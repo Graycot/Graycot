@@ -1,4 +1,12 @@
 <div id="LoopRing"><script src="https://graycot.com/webring/loop-ring.js" type="module"></script></div>
+<div class="CozyRingWrapper">
   <a href="https://graycot.com/webring/loop-redirect.html?action=prev"> < </a>
   <a href="https://graycot.com/webring/loop-redirect.html?action=home"> Loop Ring </a>
   <a href="https://graycot.com/webring/loop-redirect.html?action=next"> > </a>
+</div>
+
+&lt;div class=&quot;CozyRingWrapper&quot;&gt;<br />
+  &lt;a href=&quot;https://graycot.com/webring/loop-redirect.html?action=prev&quot;&gt; &lt; &lt;/a&gt;<br />
+  &lt;a href=&quot;https://graycot.com/webring/loop-redirect.html?action=home&quot;&gt; Loop Ring &lt;/a&gt;<br />
+  &lt;a href=&quot;https://graycot.com/webring/loop-redirect.html?action=next&quot;&gt; &gt; &lt;/a&gt;<br />
+&lt;/div&gt;
