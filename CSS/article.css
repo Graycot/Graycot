@@ -97,10 +97,17 @@ h4 {
 /*!----------------------------------------------!*/
 /*?            text decoration                    */
 
-ol, ul, code{
+ol, ul{
   display: block;
   padding: 0.0rem 0 0.6rem 0;
   margin-left: 1rem;
+}
+
+code{
+  display: block;
+  padding: 0.0rem 0 0.6rem 0;
+  margin-left: 1rem;
+  word-break:break-all;
 }
 
 p {
