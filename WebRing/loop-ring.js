@@ -1,4 +1,4 @@
-import { sites } from "./sites.js";
+const sites = `./sites.js`;
 
 const styles = `
 #LoopRingWrapper {
