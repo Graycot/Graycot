@@ -1,7 +1,7 @@
 export const sites = [
-  'https://windigo.neocities.org/',
-  'https://graystea.neocities.org/',
   'https://graycot.com/webring/',
+  'https://graystea.neocities.org/',
+  'https://windigo.neocities.org/',
   'https://swiftyshq.neocities.org/'
 ];
 
