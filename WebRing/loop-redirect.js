@@ -1,3 +1,19 @@
+/* 
+O-Ring v1 Copyleft © ALL WRONGS RESERVED © Gray (https://graycot.com/) 2021-2022 unless otherwise noted
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details. (http://www.gnu.org/licenses/)
+
+You may shrink this GNU License notice to a single line, however, THE NOTICE MUST BE KEPT AS PART OF THIS FILE.
+*/
+
 import { sites } from "./sites.js";
 
 let thisSite = document.referrer;
