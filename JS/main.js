@@ -9,10 +9,10 @@ class main extends HTMLElement {
 <main class="main-element" id="demo"> 
   <div class="grid-container">
 
+  <a href="https://graystea.neocities.org/" target=""><div class="grid-item">Gray's Tea</div></a>
   <a href="../WebRing/index.html" target=""><div class="grid-item">Loop Ring</div></a>
-  <a href="/Projects/TestZone1/index.html" target=""><div class="grid-item">JavaScript Testing Zone 1</div></a>
-  <a href="/Projects/TestZone2/index.html" target=""><div class="grid-item">JavaScript Testing Zone 2</div></a>
-  <a href="/Projects/TestZone3/index.html" target=""><div class="grid-item">JavaScript Testing Zone 3</div></a>
+  <a href="" target=""><div class="grid-item"></div></a>
+  <a href="" target=""><div class="grid-item"></div></a>
   <a href="" target=""><div class="grid-item"></div></a>
   <a href="" target=""><div class="grid-item"></div></a>
 
