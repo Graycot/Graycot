@@ -37,7 +37,7 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
 let value = params.action;
 
 if (thisIndex == null) {
-  window.location.href = 'https://graycot.com/webring/error.html?error=NullIndex';
+  window.location.href = 'https://graycot.com/webring/index.html?error=NullIndex';
 
 } else {
 
