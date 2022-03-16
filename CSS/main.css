@@ -6,7 +6,7 @@
 .main-element{
   height: 100%;
   width: 100%;
-  font: 700 clamp(20px, 2.5vh, 25px)/1.3 "Poppins", "sans-serif";
+  font: 700 clamp(30px, 3.5vh, 40px)/1.3 "Poppins", "sans-serif";
   display:flex;
   align-items: center;
 }
@@ -71,26 +71,8 @@
 
   background: #51515177;
   border:1px solid #626262;
-
-
-
   transition: 0.2s;
 }
-
-#test{
-  grid-column-start: 2;
-  grid-column-end: 5;
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
-
-
-
-
-
-
-
-
 
 iframe, img{
   width: 100%;
