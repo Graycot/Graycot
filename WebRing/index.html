@@ -128,7 +128,7 @@
             let list = ""; 
             let i; 
             for (i = 0; i < sites.length; i++) {list += `<li><a href='${sites[i]}'>${sites[i].replace(regex, "")}</a></li>`;}
-            tag.insertAdjacentHTML('afterbegin', `<h2>Member Count: ${i}</h2> <ol>${list}</ol>`);
+            tag.insertAdjacentHTML('afterbegin', `<h2 id="list">Member Count: ${i}</h2> <ol>${list}</ol>`);
           </script>
         </div>
     </div>
