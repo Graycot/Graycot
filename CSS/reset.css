@@ -8,6 +8,10 @@ html * {
     text-decoration:  unset;
 }
 
+html, body {
+    height: 100%;
+}
+
 :root {
     --white: #ffffff;
     --g0: #f8f8f8;

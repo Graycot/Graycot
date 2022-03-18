@@ -61,7 +61,6 @@ if (thisIndex == null) {
   nextIndex = randomIndex;
 }
 
-// Insert HTML next to id="LoopRing":
 let tag = document.getElementById('LoopRing');
 tag.insertAdjacentHTML('afterbegin', ` 
   <div id="LoopRingWrapper" class="OverRide">
