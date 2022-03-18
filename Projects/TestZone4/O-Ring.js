@@ -18,11 +18,12 @@ const styles = `
 #LoopRingWrapper {
   display: inline-block;
   min-width: max-content;
+  margin: 0.2rem;
   color: #e1e1e1;
   border: 1px solid #e1e1e1;
   padding: 0.1rem 0.4rem;
   border-radius: 50px;
-  font-Size: 1.5rem;
+  font-Size: 1.3rem;
 }
 #LoopRingWrapper a:hover {
   color: #b4b4b4;
