@@ -24,7 +24,7 @@ const styles = `
   text-decoration:  unset;
 }
 .loop-ring{
-  margin: 1rem 0;
+  margin: 10px 0;
   width:max-content;
   height:max-content;
   display: flex;
@@ -36,8 +36,7 @@ const styles = `
   font-family: sans-serif;
   
   border: 1px solid #b3b6b3;
-  margin: 0.1rem;
-  padding: 0.2rem 0.5rem;
+  padding: 4px 8px;
   display: inline;
   white-space: nowrap ;
 
@@ -53,11 +52,14 @@ const styles = `
 .loop-ring a:first-child {
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
+  padding-left: 10px;
 }
 
 .loop-ring a:last-child {
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
+  padding-right: 10px;
+
 }
 
 .loop-ring a:hover, .loop-ring a:focus {  
