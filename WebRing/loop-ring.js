@@ -12,6 +12,7 @@ const styles = `
   text-decoration:  unset;
 }
 .loop-ring{
+  margin: 1rem 0;
   width:max-content;
   height:max-content;
   display: flex;
