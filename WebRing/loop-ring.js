@@ -1,42 +1,72 @@
-/* 
-O-Ring v1 Copyleft © ALL WRONGS RESERVED © Gray (https://graycot.com/) 2021-2022 unless otherwise noted
-
-This program is free software; you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details. (http://www.gnu.org/licenses/)
-
-You may shrink this GNU License notice to a single line, however, THE NOTICE MUST BE KEPT AS PART OF THIS FILE.
-*/
-
 const styles = `
-#LoopRingWrapper {
-  display: inline-block;
-  min-width: max-content;
-  margin: 0.2rem;
-  color: #e1e1e1;
-  border: 1px solid #e1e1e1;
-  padding: 0.1rem 0.4rem;
-  border-radius: 50px;
-  font-Size: 1.3rem;
+
+.neon-ring * {
+  margin:           unset;
+  box-sizing:       border-box;
+  padding:          unset;
+  color:            unset;
+  text-decoration:  unset;
 }
-#LoopRingWrapper a:hover {
-  color: #b4b4b4;
+.neon-ring{
+  width:max-content;
+  height:max-content;
+  display: flex;
 }
+.neon-ring:hover, .neon-ring:focus { box-shadow: none;  }
+
+.neon-ring a {
+  font: 700 1.7rem "Poppins"; color: #f5f5f5;
+  font-family: sans-serif;
+  
+  border: 1px solid #b3b6b3;
+  margin: 5px;
+  padding: 5px 10px;
+  display: inline;
+  white-space: nowrap ;
+  line-height: 3rem;
+
+  margin: auto;
+  padding: auto;
+  line-height: unset;
+  box-shadow: none;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.neon-ring a:first-child {
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.neon-ring a:last-child {
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.neon-ring a:hover, .neon-ring a:focus {  
+  box-shadow:
+  0 0 1px 1px #fff7f7,   
+  0 0 2px 2px #c4bdbd, 
+  0 0 3px 3px #4e4d4d,
+
+  inset 0 0 1px  #4e4d4d,
+  inset 0 0 2px  #c4bdbd,
+  inset 0 0 2px  #fff7f7;
+}
+
 `
+// Applies the CSS above to the HTML page
 const styleSheet = document.createElement("style")
 styleSheet.innerText = styles
 document.head.appendChild(styleSheet)
 
+// Imports the list of member sites from sites.js:
 import { sites } from "./sites.js";
 
-// Set thisSite to the adress of the site the user is currently on:
+// Sets thisSite to the adress of the site the user is currently on:
 let thisSite = window.location.href;
+// Finds the index of thisSite on the site list
 let thisIndex;
 let i;
 for (i = 0; i < sites.length; i++) {
@@ -62,14 +92,16 @@ if (thisIndex == null) {
   nextIndex = randomIndex;
 }
 
-// Insert HTML next to id="LoopRing":
+// Insert HTML next to id="LoopRingJS":
 let tag = document.getElementById('LoopRing');
 tag.insertAdjacentHTML('afterbegin', ` 
-  <div id="LoopRingWrapper" class="OverRide">
-    <a href='${sites[previousIndex]}'> <  </a>
-    <a href="https://graycot.com/webring/index.html"> Loop Ring </a>
-    <a href='${sites[nextIndex]}'> > </a>
-    <br>
 
+  <div class="neon-ring">
+      <a href='${sites[previousIndex]}'> < </a>
+      <a href="./index.html#list"> ... </a>
+      <a href="./index.html">Loop Ring</a>
+      <a href='${sites[randomIndex]}'> ? </a>
+      <a href='${sites[nextIndex]}'> > </a>
   </div>
+   
 `);
