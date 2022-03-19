@@ -38,10 +38,8 @@ const styles = `
 
   border: 1px solid #b3b6b3;
   padding: 4px 8px;
-  display: inline;
   white-space: nowrap ;
 
-  line-height: unset;
   box-shadow: none;
   display: flex;
   justify-content: center;
