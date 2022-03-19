@@ -32,7 +32,7 @@ const styles = `
 .loop-ring:hover, .loop-ring:focus { box-shadow: none;  }
 
 .loop-ring a {
-  font: 700 clamp(15px, 1.2rem, 20px) "Poppins"; color: #f5f5f5;
+  font: 700 clamp(15px, 1rem, 25px) "Poppins"; color: #f5f5f5;
   font-family: sans-serif;
   
   border: 1px solid #b3b6b3;
