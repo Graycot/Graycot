@@ -1,3 +1,15 @@
+/* O-Ring v1.3 Copyleft © ALL WRONGS RESERVED © Gray (https://graycot.com/).
+
+O-Ring takes inspiration from OnionRing (https://garlic.garden/onionring/onionring-widget.js). While much of the O-Ring code is original, specific portions of the OnionRing script have been re-arranged and repurposed. 
+
+OnionRing is free software; you can redistribute it and/or modify
+it under the terms of the cooperative non-violent license (CNPL) v4+ (https://thufie.lain.haus/NPL.html).
+
+Unless voided by the terms of CNPL v4+, O-Ring is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License (GPLv3+) as published by
+the Free Software Foundation. (http://www.gnu.org/licenses/)*/
+
+
 const styles = `
 #LoopRing{
   display: flex;
@@ -102,8 +114,8 @@ tag.insertAdjacentHTML('afterbegin', `
 
   <div class="loop-ring">
       <a href='${sites[previousIndex]}'> < </a>
-      <a href="./index.html#list"> ... </a>
-      <a href="./index.html">Loop Ring</a>
+      <a href="https://graycot.com/webring/index.html#list"> ... </a>
+      <a href="https://graycot.com/webring/index.html">Loop Ring</a>
       <a href='${sites[randomIndex]}'> ? </a>
       <a href='${sites[nextIndex]}'> > </a>
   </div>
