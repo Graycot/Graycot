@@ -1,29 +1,32 @@
 const styles = `
+#LoopRing{
+  display: flex;
+  justify-content: center;
+}
 
-.neon-ring * {
+.loop-ring * {
   margin:           unset;
   box-sizing:       border-box;
   padding:          unset;
   color:            unset;
   text-decoration:  unset;
 }
-.neon-ring{
+.loop-ring{
   width:max-content;
   height:max-content;
   display: flex;
 }
-.neon-ring:hover, .neon-ring:focus { box-shadow: none;  }
+.loop-ring:hover, .loop-ring:focus { box-shadow: none;  }
 
-.neon-ring a {
-  font: 700 1.7rem "Poppins"; color: #f5f5f5;
+.loop-ring a {
+  font: 700 1.3rem "Poppins"; color: #f5f5f5;
   font-family: sans-serif;
   
   border: 1px solid #b3b6b3;
-  margin: 5px;
-  padding: 5px 10px;
+  margin: 0.1rem;
+  padding: 0.2rem 0.5rem;
   display: inline;
   white-space: nowrap ;
-  line-height: 3rem;
 
   margin: auto;
   padding: auto;
@@ -34,17 +37,17 @@ const styles = `
   width: 100%;
 }
 
-.neon-ring a:first-child {
+.loop-ring a:first-child {
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
 }
 
-.neon-ring a:last-child {
+.loop-ring a:last-child {
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
 }
 
-.neon-ring a:hover, .neon-ring a:focus {  
+.loop-ring a:hover, .loop-ring a:focus {  
   box-shadow:
   0 0 1px 1px #fff7f7,   
   0 0 2px 2px #c4bdbd, 
@@ -96,7 +99,7 @@ if (thisIndex == null) {
 let tag = document.getElementById('LoopRing');
 tag.insertAdjacentHTML('afterbegin', ` 
 
-  <div class="neon-ring">
+  <div class="loop-ring">
       <a href='${sites[previousIndex]}'> < </a>
       <a href="./index.html#list"> ... </a>
       <a href="./index.html">Loop Ring</a>
