@@ -3,7 +3,8 @@ export const sites = [
   'https://graystea.neocities.org/',
   'https://windigo.neocities.org/',
   'https://swiftyshq.neocities.org/',
-  'https://temaisgame.neocities.org/'
+  'https://temaisgame.neocities.org/',
+  'https://vaea-v.neocities.org/home/'
 ];
 
 
