@@ -1,0 +1,42 @@
+body{
+  background-color: #4e4d4d;
+}
+
+.neon-sub-bin{
+  box-shadow:
+  0 0 0.1rem  0.1rem #fff7f7,   
+  0 0 0.4rem  0.2rem #c4bdbd, 
+  0 0   4rem  0.2rem #4e4d4d,
+
+  inset 0 0 1.5rem  0.1rem #4e4d4d,
+  inset 0 0 0.4rem  0.05rem #c4bdbd,
+  inset 0 0 0.5rem  0.05rem #fff7f7;
+
+  border-radius: 0.5rem;
+
+  width:max-content;
+  height:max-content;
+  display: inline-block;
+  margin: 10px;
+
+}
+.neon-sub-bin a {
+  margin: auto;
+  padding: auto;
+  line-height: unset;
+  box-shadow: none;
+  border-radius: 0.0rem;
+  display: flex;
+  justify-content: center;
+}
+
+.neon-inner-sub-bin{
+  order: 4px solid rgb(239, 243, 10);
+  display: flex;
+}
+
+.neon-inner-sub-bin a{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
