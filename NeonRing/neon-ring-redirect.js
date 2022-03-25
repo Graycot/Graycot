@@ -58,9 +58,9 @@ if (value == 'prev') {
 } else if (value == 'next') {
     window.location.href = sites[nextIndex];
 } else if (value == 'list') {
-    window.location.href = 'https://duckduckgo.com/?t=ffab&q=neon&ia=answer#list';
+    window.location.href = 'https://graycot.com/webring/index.html#list';
 } else if (value == 'home') {
-    window.location.href = 'https://duckduckgo.com/?t=ffab&q=neon&ia=answer'; 
+    window.location.href = 'https://graycot.com/webring/index.html'; 
 } else if (value == 'rand') {
     window.location.href = sites[randomIndex];;
 } else {

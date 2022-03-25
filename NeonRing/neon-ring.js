@@ -1,21 +1,7 @@
 const styles = `
-html * {
-  margin:           unset;
-  box-sizing:       border-box;
-  padding:          unset;
-  color:            unset;
-  text-decoration:  unset;
-}
-
-html, body {
-  min-height: 100vh;
-}
-
-  body {
-background-color: #252525;
-}
 
 .neon-ring{
+
 box-shadow:
 0 0 0.1rem  0.1rem #fff7f7,   
 0 0 0.4rem  0.2rem #c4bdbd, 
@@ -24,20 +10,20 @@ box-shadow:
 inset 0 0 1.5rem  0.1rem #4e4d4d,
 inset 0 0 0.4rem  0.05rem #c4bdbd,
 inset 0 0 0.5rem  0.05rem #fff7f7;
-
+  
 border-radius: 0.5rem;
 
 width:max-content;
 height:max-content;
-display: inline-block;
-margin: 10px;
+display: block;
+margin: 10px auto;
 
 }
 .neon-ring:hover, .neon-ring:focus { box-shadow: none;  }
 
 .neon-ring a {
-font: 700 1.7rem "Poppins"; color: #f5f5f5;
-font-family: sans-serif;
+font: 500 1rem "Poppins"; color: #f5f5f5;
+
 border: 1px solid #b3b6b3;
 border-radius: 0.5rem;
 margin: 5px;
@@ -45,7 +31,6 @@ padding: 5px 10px;
 display: inline;
 white-space: nowrap ;
 line-height: 3rem;
-
 
 box-shadow:
 0 0 0.1rem  0.1rem #fff7f7,   
@@ -66,6 +51,7 @@ justify-content: center;
 width: 100%;
 }
 .neon-ring a:hover, .neon-ring a:focus {  
+color: #777777;
 box-shadow:
 0 0 1px  1px #fff7f7,   
 0 0 4px  2px #c4bdbd, 
@@ -119,11 +105,11 @@ if (thisIndex == null) {
 // Insert HTML next to id="LoopRing":
 let tag = document.getElementById('NeonRingJS');
 tag.insertAdjacentHTML('afterbegin', ` 
-    <div class="neon-ring">
-    <a href="./index.html">Neon Ring</a>
+    <div class="neon-ring override">
+    <a href="https://graycot.com/neonring/index.html">Neon Ring</a>
     <div class="neon-bin">
       <a href='${sites[previousIndex]}'> < </a>
-      <a href="./index.html#list"> ... </a>
+      <a href="https://graycot.com/webring/index.html#list"> ... </a>
       <a href='${sites[randomIndex]}'> ? </a>
       <a href='${sites[nextIndex]}'> > </a>
     </div>

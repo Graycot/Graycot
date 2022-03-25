@@ -1,107 +1,173 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Neon Ring</title>
-  <style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="./neon-article.css">
+    <title>Neon Ring</title>
+  
+  
+  </head>
+  <body>
+      <div class="page-wrapper">
+        <nav><a href="/index.html">Home</a></nav>
+          <h1>Web Ring</h1>
+            <h2>What is a webring?</h2>
+              <p>A webring (or web ring) is a collection of websites linked together in a circular structure, and usually organized around a specific theme, often educational or social. They were popular in the 1990s and early 2000s, particularly among amateur websites. </p>
+              <p>To be a part of the webring, each site has a common navigation bar. It contains links to the previous and next site. By selecting next (or previous) repeatedly, the user will eventually reach the site they started at. This is the origin of the term webring. The select-through route around the ring is usually supplemented by a central site with links to all member sites; this prevents the ring from breaking completely if a member site goes offline. The advantage of a webring is that if the user is interested in the topic on one website, they can quickly connect to another website on the same topic. Webrings usually have a moderator who decides which pages to include in the webring. After approval, webmasters add their pages to the ring by 'linking in' to the ring; this requires adding the necessary HTML or JavaScript widget to their site.</p>
+              <aside>Explaination was ripped from <a href="https://en.wikipedia.org/wiki/Webring" target="_blank">Wikipedia</a></aside>
+      </div>
+      <hr>
+      <div class="page-wrapper">
+         <h1>Neon Ring</h1>
+            <h2>Neon Ring Manifesto:</h2>
+            <p>Is your website <span class="neon-span">Bright</span>, <span class="neon-span">Flashy</span>, or <span class="neon-span">Gaudy?</span> If you think that you fall into any of those categories, you are welcome here in the <span class="neon-span"> Neon Ring!</span>. </p>
+            <h3><strong>Sites will not be allowed to participate if they contain any of the following:</strong></h3>
+            <ul>
+              <li>Bullying, Harassment, Sexism, Homophobia/Transphobia, Racism, or Hate speech.</li>
+              <li>Antisocial / Disturbing behavior</li>
+              <li>Unmarked NSFW content</li>
+              <li>Paid advertisements</li>
+              <li>Malicious code</li>
+              <li><strong class="underline">Only</strong> a portfolio.</li>
+            </ul>
+            <h2>How to join:</h2>
+              <h3>1: Let us know that you are interested!</h3>
+                <p> Contact  <span class="highlight">Gray</span> on the <a href="https://discord.com/invite/JM34yvMaFP" target="_blank">discord server</a> and send a message in #web-ring. Alternatively, you can add yourself to the webring by making a <a href="https://github.com/Graycot/Graycot/blob/main/NeonRing/sites.js">pull request on github</a>.</p>
+              <h3>2: Add the webring code to your site.</h3>
+                <p>There are two ways to add the webring to your website. 
+                  <ol>
+                    <li>Add the Javascript script to your site. </li>
+                    <li>Add the HTML anchor tags to your site. </li> 
+                  </ol>
+                     
+                  <p>The Javascript &lt;script&gt;&lt;/script&gt; loads and runs the code from https://graycot.com/webring/loop-ring.js. This creates the widget you see below:</p>
+                  <div id="NeonRingJS">
+                    <script src="./neon-ring.js" type="module"></script>
+                  </div>
+                  <br>
+                  <aside>The Javascript widget may take a quarter second to appear when loaded.</aside>
+                  <br>
+                  <p>The HTML tags direct the user to https://graycot.com/neonring/loop-redirect.html. This page then redirects the user to the previous, member list, home, random site, or next webpage in the ring. You can see an example of the unstyled anchor tags below:</p>        
+                  <div style="display: inline-block; margin: 0 0 0.6rem 0;">
+                    <a href="./neon-ring-redirect.html?action=prev"> < </a>
+                    <a href="./neon-ring-redirect.html?action=list"> ... </a>
+                    <a href="./neon-ring-redirect.html?action=home">Neon Ring</a>
+                    <a href="./neon-ring-redirect.html?action=rand"> ? </a>
+                    <a href="./neon-ring-redirect.html?action=next"> > </a>
+                  </div>
+                  <br><br>
+                  <aside>The HTML widget may delay users up to half a second when being redirected to or from your page.</aside>
+                  <br>
+                  <p>Copy & paste the JavaScript or HTML into the body of the webpage you want the loop ring to direct visitors.</p>
+                  <aside>Note: Things may not work as intended if you include the webring code more than once on a HTML page.</aside>
+                <h4>1. JavaScript</h4>
+                  <code>
+                    &lt;div id=&quot;NeonRingJS&quot;&gt;&lt;script src=&quot;./neon-ring.js&quot; type=&quot;module&quot;&gt;&lt;/script&gt;&lt;/div&gt;
+                  </code>
+                <h4>2. HTML</h4>
+                  <code><br>
+                    &lt;a href=&quot;./neon-ring-redirect.html?action=prev&quot;&gt; &lt; &lt;/a&gt;&lt;br /&gt;<br><br>
+                    &lt;a href=&quot;./neon-ring-redirect.html?action=list&quot;&gt; ... &lt;/a&gt;&lt;br /&gt;<br><br>
+                    &lt;a href=&quot;./neon-ring-redirect.html?action=home&quot;&gt;Neon Ring&lt;/a&gt;&lt;br /&gt;<br><br>
+                    &lt;a href=&quot;./neon-ring-redirect.html?action=rand&quot;&gt; ? &lt;/a&gt;&lt;br /&gt;<br><br>
+                    &lt;a href=&quot;./neon-ring-redirect.html?action=next&quot;&gt; &gt; &lt;/a&gt;<br><br>
+                  </code>
+              <h3>3: CSS Style the webring</h3>
+                  <h4>1. JavaScript</h4>
+                    <p>Here is the default styling of the webring.</p>
+                    <code>
+                      .neon-ring{
 
-    html * {
-        margin:           unset;
-        box-sizing:       border-box;
-        padding:          unset;
-        color:            unset;
-        text-decoration:  unset;
-    }
-
-    html, body {
-        min-height: 100vh;
-    }
-
-        body {
-      background-color: #252525;
-    }
-
-    .neon-ring{
-      box-shadow:
-      0 0 0.1rem  0.1rem #fff7f7,   
-      0 0 0.4rem  0.2rem #c4bdbd, 
-      0 0   4rem  0.2rem #4e4d4d,
-
-      inset 0 0 1.5rem  0.1rem #4e4d4d,
-      inset 0 0 0.4rem  0.05rem #c4bdbd,
-      inset 0 0 0.5rem  0.05rem #fff7f7;
-
-      border-radius: 0.5rem;
-
-      width:max-content;
-      height:max-content;
-      display: inline-block;
-      margin: 10px;
-
-    }
-    .neon-ring:hover, .neon-ring:focus { box-shadow: none;  }
-
-    .neon-ring a {
-      font: 700 1.7rem "Poppins"; color: #f5f5f5;
-      font-family: sans-serif;
-      border: 1px solid #b3b6b3;
-      border-radius: 0.5rem;
-      margin: 5px;
-      padding: 5px 10px;
-      display: inline;
-      white-space: nowrap ;
-      line-height: 3rem;
-      
-
-      box-shadow:
-      0 0 0.1rem  0.1rem #fff7f7,   
-      0 0 0.4rem  0.2rem #c4bdbd, 
-      0 0   4rem  0.2rem #4e4d4d,
-
-      inset 0 0 1.5rem  0.1rem #4e4d4d,
-      inset 0 0 0.4rem  0.05rem #c4bdbd,
-      inset 0 0 0.5rem  0.05rem #fff7f7;
-
-      margin: auto;
-      padding: auto;
-      line-height: unset;
-      box-shadow: none;
-      border-radius: 0.0rem;
-      display: flex;
-      justify-content: center;
-      width: 100%;
-    }
-    .neon-ring a:hover, .neon-ring a:focus {  
-      box-shadow:
-      0 0 1px  1px #fff7f7,   
-      0 0 4px  2px #c4bdbd, 
-      0 0 40px 2px #4e4d4d,
-
-      inset 0 0 1px  0.1rem #4e4d4d,
-      inset 0 0 2px  0.05rem #c4bdbd,
-      inset 0 0 2px  0.05rem #fff7f7;
-    }
-
-    .neon-bin{
-      display: flex;
-    }
-
-    
-  </style>
-</head>
-<body>
-  <div id="NeonRingJS"><script src="./neon-ring.js" type="module"></script></div> 
-  <div class="neon-ring">
-    <a href="./neon-ring-redirect.html?action=home">Neon Ring</a>
-    <div class="neon-bin">
-      <a href="./neon-ring-redirect.html?action=prev"> < </a>
-      <a href="./neon-ring-redirect.html?action=list"> ... </a>
-      <a href="./neon-ring-redirect.html?action=rand"> ? </a>
-      <a href="./neon-ring-redirect.html?action=next"> > </a>
+                        box-shadow:
+                        0 0 0.1rem  0.1rem #fff7f7,   
+                        0 0 0.4rem  0.2rem #c4bdbd, 
+                        0 0   4rem  0.2rem #4e4d4d,
+                        
+                        inset 0 0 1.5rem  0.1rem #4e4d4d,
+                        inset 0 0 0.4rem  0.05rem #c4bdbd,
+                        inset 0 0 0.5rem  0.05rem #fff7f7;
+                          
+                        border-radius: 0.5rem;
+                        
+                        width:max-content;
+                        height:max-content;
+                        display: block;
+                        margin: 10px auto;
+                        
+                        }
+                        .neon-ring:hover, .neon-ring:focus { box-shadow: none;  }
+                        
+                        .neon-ring a {
+                        font: 500 1rem "Poppins"; color: #f5f5f5;
+                        
+                        border: 1px solid #b3b6b3;
+                        border-radius: 0.5rem;
+                        margin: 5px;
+                        padding: 5px 10px;
+                        display: inline;
+                        white-space: nowrap ;
+                        line-height: 3rem;
+                        
+                        box-shadow:
+                        0 0 0.1rem  0.1rem #fff7f7,   
+                        0 0 0.4rem  0.2rem #c4bdbd, 
+                        0 0   4rem  0.2rem #4e4d4d,
+                        
+                        inset 0 0 1.5rem  0.1rem #4e4d4d,
+                        inset 0 0 0.4rem  0.05rem #c4bdbd,
+                        inset 0 0 0.5rem  0.05rem #fff7f7;
+                        
+                        margin: auto;
+                        padding: auto;
+                        line-height: unset;
+                        box-shadow: none;
+                        border-radius: 0.0rem;
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        }
+                        .neon-ring a:hover, .neon-ring a:focus {  
+                        color: #777777;
+                        box-shadow:
+                        0 0 1px  1px #fff7f7,   
+                        0 0 4px  2px #c4bdbd, 
+                        0 0 40px 2px #4e4d4d,
+                        
+                        inset 0 0 1px  0.1rem #4e4d4d,
+                        inset 0 0 2px  0.05rem #c4bdbd,
+                        inset 0 0 2px  0.05rem #fff7f7;
+                        }
+                        
+                        .neon-bin{
+                        display: flex;
+                        }
+                    </code>
+                    <p>You can override the default CSS ruleset by including your own CSS. You must append ".override" to the end of ".neon-ring". Here is how that would look:</p>
+                    <code>
+                      .neon-ring.override {} 
+                      .neon-ring.override a:hover {} 
+                    </code> 
+                  <h4>2. HTML</h4>
+                  <p> As for the HTML, there is no default styling built in. The links will take on whatever styling you have applied to your webpage. Copy and paste the default JavaScript styling shown above, or design your own style! </p>
     </div>
-  </div>
-</body>
+    <hr>
+    <div class="page-wrapper">
+        <h1>Neon Ring Members</h1>
+          <div id="index">
+            <script async type="module">
+              import { sites } from "./sites.js";
+              const tag = document.getElementById('index');
+              const regex = /^https:\/\/|\/$/g; 
+              let list = ""; 
+              let i; 
+              for (i = 0; i < sites.length; i++) {list += `<li><a href='${sites[i]}'>${sites[i].replace(regex, "")}</a></li>`;}
+              tag.insertAdjacentHTML('afterbegin', `<h2 id="list">Member Count: ${i}</h2> <ol>${list}</ol>`);
+            </script>
+          </div>
+      </div>
+    </div>
+  </body>
 </html>

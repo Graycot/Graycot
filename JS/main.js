@@ -11,7 +11,7 @@ class main extends HTMLElement {
 
   <a href="https://graystea.neocities.org/" target=""><div class="grid-item">Gray's Tea</div></a>
   <a href="../WebRing/index.html" target=""><div class="grid-item">Loop Ring</div></a>
-  <a href="" target=""><div class="grid-item"></div></a>
+  <a href="../NeonRing/index.html" target=""><div class="grid-item">NeonRing</div></a>
   <a href="" target=""><div class="grid-item"></div></a>
   <a href="" target=""><div class="grid-item"></div></a>
   <a href="" target=""><div class="grid-item"></div></a>
@@ -42,5 +42,4 @@ class main extends HTMLElement {
     `;
   }
 }
-customElements.define('main-component', main);
-
+customElements.define("main-component", main);

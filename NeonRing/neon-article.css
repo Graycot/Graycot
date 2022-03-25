@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+body{
+  background-color: var(--g88);
+}
+
+/*!----------------------------------------------!*/
+/*?                page                           */
+
+.page-wrapper {
+  display:grid;
+  grid-template-columns: 5% [start] 90% [end] 5%;
+  margin: 0.5rem auto;
+  max-width:600px;
+
+  color: var(--g0);
+  background-color: var(--g8);
+  border:1px solid var(--g7);
+  border-radius: 0.5rem;
+  line-height:1.5;
+  font-size: 20px;
+  
+  box-shadow: 0 0 1px 1px #fff7f7, 0 0 4px 2px #c4bdbd,
+  0 0 40px 2px #4e4d4d, inset 0 0 1px 0.1rem #4e4d4d,
+  inset 0 0 2px 0.05rem #c4bdbd, inset 0 0 2px 0.05rem #fff7f7;
+}
+
+.page-wrapper * {
+  grid-column: start/end;
+}
+
+@media (min-width: 1450px) {
+  .page-wrapper {
+  max-width:800px;
+  }
+  hr {
+  max-width:800px;
+  }
+}
+
+
+/*!----------------------------------------------!*/
+/*?               Headers                         */
+
+/*TODO REPLACE ROBOTO WITH POPPINS BITCH*/
+
+h1 {
+  font: 700 1.7rem "Poppins"; color: var(--g1);
+  padding: 0.5rem 0 0.5rem 0;
+
+  text-shadow: 
+  1px 0px .02px #b4b0b0, .02px 0px .10px #b4b0b0, .02px 0px .05px #b4b0b0, 
+  1px 0px  00px #474745, .20px 0px  00px #474745, .20px 0px  00px #474745,
+  1px 0px .01px #474745, .20px 0px .10px #474745, .20px 0px .10px #474745,
+  1px 0px  02px #474745, .20px 0px  02px #474745, .20px 0px  20px #474745, 
+  1px 0px .05px #706f6b, .20px 0px  01px #706f6b, .20px 0px .50px #706f6b, 
+  1px 0px .05px #706f6b, .20px 0px  20px #706f6b, .20px 0px  01px #706f6b,
+  1px 0px .05px #706f6b, .20px 0px  30px #706f6b, .20px 0px  01px #706f6b;
+}
+
+h2 { 
+  font: 700 1.3rem "Poppins"; color: var(--cg3);
+  filter: brightness(110%);
+  border-top: 1px solid var(--g7);
+  padding: 0.5rem 0;
+
+  box-shadow: 0 -1px #fff7f7, 0 -2px #c4bdbd,
+  0 -4px #4e4d4d;
+
+  text-shadow: 
+  3px 3px 20px var(--g8), 4px 4px 20px var(--g7), 5px 5px 20px var(--g8);
+}
+
+h3 {
+  font: 700 1.1rem "Poppins"; color: var(--wg4);
+  filter: brightness(120%);
+  border-top: 1px dashed var(--g6);
+  margin-top: 0.5rem;
+  padding: 0.5rem 0;
+
+  box-shadow: 0 -1px #fff7f7, 0 -2px #c4bdbd,
+  0 -4px #4e4d4d;
+
+  text-shadow: 
+  3px 3px 10px var(--g8), 4px 4px 10px var(--g8), 5px 5px 10px var(--g8);
+}
+
+h4 {
+  font: 700 1.0rem "Poppins"; color: var(--g33);
+  border-top: 1px dotted var(--g5);
+  margin-top: 0.5rem;
+  padding: 0.5rem 0;
+
+  box-shadow: 0 -1px #fff7f7, 0 -2px #c4bdbd,
+  0 -4px #4e4d4d;
+
+  text-shadow: 
+  3px 3px 10px var(--g7), 4px 4px 10px var(--g8), 5px 5px 10px var(--g8);
+}
+
+/*!----------------------------------------------!*/
+/*?            text decoration                    */
+
+ol, ul{
+  display: block;
+  margin: 0.0rem 0 0.6rem 1rem;
+}
+
+code{
+  display: block;
+  padding: 0.0rem 0 0.6rem 1rem;
+  word-break:break-all;
+}
+
+p {
+  margin: 0.0rem 0 0.6rem 0;
+}
+
+ a:not(.neon-ring a) { 
+  color: var(--cg3);
+  box-shadow: inset 0 -0.10em var(--cg6);  
+  filter: brightness(120%);
+}
+ a:hover:not(.neon-ring a),  a:focus:not(.neon-ring a) { 
+  box-shadow: inset 0 -0.10em var(--g7);
+  color: var(--g5);  
+}
+
+.underline { 
+  box-shadow: inset 0 -0.10em var(--g5);
+}
+
+.highlight { 
+  color: var(--g33);  
+}
+
+.neon-span {
+  font: 700 1.0rem "Poppins";
+}
+
+hr {
+  height: 1px;
+  background-color: #fff7f7;
+  max-width:600px;
+
+  display: block;
+  margin: 1rem auto;
+}
+
+/*!----------------------------------------------!*/
+/*?                 Aside / Caption               */
+
+figcaption, aside{
+  font: 400 0.7rem "Poppins"; color: var(--g4);
+  margin: .4rem 0rem;
+  text-align: center;
+  
+}
+ figcaption a, aside a{
+  color: var(--wg4);
+  box-shadow: inset 0 -0.10em var(--wg6);  
+  filter: brightness(120%);
+}
+
+
+/*!----------------------------------------------!*/
+/*?                 graphics                      */
+
+ figure {
+  margin-top: 0.5rem;
+}
+
+figure * { width: 100%; }
+
+.size-0{
+  display: block;
+  width: 100%;
+  margin: auto;
+  border: 2px solid #444;
+  border-radius: 0.3rem;
+}
+
+.size-1{
+  display: block;
+  width: 30%;
+  margin: auto;
+}
