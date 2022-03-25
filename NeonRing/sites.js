@@ -1,4 +1,4 @@
 export const sites = [
   "https://graycot.com/NeonRing/",
-  "https://graystea.neocities.org/",
+  "https://graystea.neocities.org/"
 ];
