@@ -74,7 +74,7 @@ document.head.appendChild(styleSheet)
 // Imports the list of member sites from sites.js:
 import { sites } from "./sites.js";
 
-// Sets thisSite to the adress of the site the user is currently on:
+// Sets thisSite to the address of the site the user is currently on:
 let thisSite = window.location.href;
 // Finds the index of thisSite on the site list
 let thisIndex;
@@ -109,7 +109,7 @@ tag.insertAdjacentHTML('afterbegin', `
     <a href="https://graycot.com/neonring/index.html">Neon Ring</a>
     <div class="neon-bin">
       <a href='${sites[previousIndex]}'> < </a>
-      <a href="https://graycot.com/webring/index.html#list"> ... </a>
+      <a href="https://graycot.com/neonring/index.html#list"> ... </a>
       <a href='${sites[randomIndex]}'> ? </a>
       <a href='${sites[nextIndex]}'> > </a>
     </div>
