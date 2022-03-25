@@ -163,7 +163,7 @@
               const regex = /^https:\/\/|\/$/g; 
               let list = ""; 
               let i; 
-              for (i = 0; i < sites.length; i++) {list += `<li><a href='${sites[i]}'>${sites[i].replace(regex, "")}</a></li>`;}
+              for (i = 0; i < sites.length; i++) {list += `<li><a target="_blank" href='${sites[i]}'>${sites[i].replace(regex, "")}</a></li>`;}
               tag.insertAdjacentHTML('afterbegin', `<h2 id="list">Member Count: ${i}</h2> <ol>${list}</ol>`);
             </script>
           </div>
