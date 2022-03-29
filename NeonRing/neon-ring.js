@@ -90,11 +90,10 @@ for (i = 0; i < sites.length; i++) {
   if (thisSite.startsWith(sites[i])) {
     thisIndex = i;
     console.log(`i: ${i}`);
-
     break;
   }
 }
-
+console.log(`sites.length: ${sites.length}`);
 console.log(`ThisIndex: ${thisIndex}`);
 console.log(`i (Final): ${i}`);
 
