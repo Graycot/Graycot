@@ -110,8 +110,10 @@ console.log(`otherSites: ${otherSites}`);
 let previousIndex = (thisIndex-1 < 0) ? sites.length-1 : thisIndex-1;
 let nextIndex = (thisIndex+1 >= sites.length) ? 0 : thisIndex+1;
 
-console.log(`thisSite: ${previousIndex}`);
-console.log(`thisSite: ${nextIndex}`);
+console.log(`previousIndex: ${previousIndex}`);
+console.log(`nextIndex: ${nextIndex}`);
+console.log(`previousSite: ${sites[previousIndex]}`);
+console.log(`nextSite: ${sites[nextIndex]}`);
 
 
 // If the site that the user is currently on is not part of the web ring, set the Previous and Next links to be Random.
@@ -120,8 +122,6 @@ if (thisIndex == null) {
   nextIndex = randomIndex;
 }
 
-console.log(`thisSite: ${previousIndex}`);
-console.log(`thisSite: ${nextIndex}`);
 
 // Insert HTML next to id="LoopRing":
 let tag = document.getElementById('NeonRingJS');
