@@ -74,17 +74,29 @@ document.head.appendChild(styleSheet)
 // Imports the list of member sites from sites.js:
 import { sites } from "./sites.js";
 
+console.log(`sites: ${sites}`);
+
+
 // Sets thisSite to the address of the site the user is currently on:
 let thisSite = window.location.href;
+
+console.log(`thisSite: ${thisSite}`);
+
+
 // Finds the index of thisSite on the site list
 let thisIndex;
 let i;
 for (i = 0; i < sites.length; i++) {
   if (thisSite.startsWith(sites[i])) {
     thisIndex = i;
+    console.log(`i: ${i}`);
+
     break;
   }
 }
+
+console.log(`ThisIndex: ${thisIndex}`);
+console.log(`i (Final): ${i}`);
 
 //Calculate Random site:
 let otherSites;
@@ -92,15 +104,24 @@ otherSites = sites.slice();
 otherSites.splice(thisIndex, 1);
 let randomIndex = Math.floor(Math.random() * otherSites.length);
 
+console.log(`otherSites: ${otherSites}`);
+
 //Calculate Previous and Next sites
 let previousIndex = (thisIndex-1 < 0) ? sites.length-1 : thisIndex-1;
 let nextIndex = (thisIndex+1 >= sites.length) ? 0 : thisIndex+1;
 
-// If the site that the user is currently on is not part of the webring, set the Previous and Next links to be Random.
+console.log(`thisSite: ${previousIndex}`);
+console.log(`thisSite: ${nextIndex}`);
+
+
+// If the site that the user is currently on is not part of the web ring, set the Previous and Next links to be Random.
 if (thisIndex == null) {
   previousIndex = randomIndex;
   nextIndex = randomIndex;
 }
+
+console.log(`thisSite: ${previousIndex}`);
+console.log(`thisSite: ${nextIndex}`);
 
 // Insert HTML next to id="LoopRing":
 let tag = document.getElementById('NeonRingJS');
