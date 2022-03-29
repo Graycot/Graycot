@@ -1,6 +1,12 @@
-import { sites } from "./sites.js"; 
+const sites = [
+  'https://graycot.com/NeonRing/',
+  'https://temaisgame.neocities.org/'
+]; 
+
 let thisSite = document.referrer;
+
 let thisIndex;
+
 let i;
 for (i = 0; i < sites.length; i++) {
   if (thisSite.startsWith(sites[i])) {
