@@ -1,26 +1,5 @@
-/* O-Ring v1.3 Copyleft © ALL WRONGS RESERVED © Gray (https://graycot.com/).
-
-O-Ring takes inspiration from OnionRing (https://garlic.garden/onionring/onionring-widget.js). While much of the O-Ring code is original, specific portions of the OnionRing script have been re-arranged and repurposed. 
-Unlike OnionRing which was designed to be a JavaScript widget on each webring member site, O-Ring was built as a redirect script hosted by the webring RingMaster. This eliminates the security vulnerability of remote
-JavaScript on each webring member's sites. Additionally, the HTML method is more flexible and allows each member more creative freedom on the look and functionality of the ring code on their site.
-
-OnionRing is free software; you can redistribute it and/or modify
-it under the terms of the cooperative non-violent license (CNPL) v4+ (https://thufie.lain.haus/NPL.html).
-
-Unless voided by the terms of CNPL v4+, O-Ring is free software; you can redistribute it and/or modify
-it under the terms of the GNU General Public License (GPLv3+) as published by
-the Free Software Foundation. (http://www.gnu.org/licenses/)*/
-
-
-
-
-// Import list of member sites from sites.js:
-import { sites } from "./sites.js"; //!!! replace ./sites.js with the URL/URI of your sites.js location.
-
-// Sets thisSite to the adress of the member site the user was just on:
+import { sites } from "./sites.js"; 
 let thisSite = document.referrer;
-
-// Finds the index of thisSite on the site list
 let thisIndex;
 let i;
 for (i = 0; i < sites.length; i++) {
