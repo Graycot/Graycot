@@ -23,7 +23,7 @@ const styles = `
 .neon-ring:hover, .neon-ring:focus { box-shadow: none;  }
 
   .neon-ring a {
-  font: 500 1rem "Poppins"; color: #f5f5f5;
+  font: 500 1.3rem "Poppins"; color: #f5f5f5;
   text-decoration: none;
 
   border: 1px solid #b3b6b3;
