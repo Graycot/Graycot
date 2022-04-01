@@ -49,8 +49,6 @@ box-shadow: none;
 border-radius: 0.0rem;
 display: flex;
 justify-content: center;
-width: 100%;
-overflow: hidden;
 }
 .neon-ring a:hover, .neon-ring a:focus {  
   color: #777777;
