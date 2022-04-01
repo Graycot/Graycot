@@ -24,7 +24,7 @@ const styles = `
 
   .neon-ring a {
   font: 500 1.2rem "Poppins"; color: #f5f5f5;
-  text-decoration: none;
+  text-decoration: underline none;
 
   border: 1px solid #b3b6b3;
   border-radius: 0.5rem;
