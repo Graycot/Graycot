@@ -22,34 +22,35 @@ const styles = `
 }
 .neon-ring:hover, .neon-ring:focus { box-shadow: none;  }
 
-  .neon-ring a {
-  font: 500 1.2rem "Poppins"; color: #f5f5f5;
-  text-decoration: none;
+.neon-ring a {
+font: 500 1.2rem "Poppins"; color: #f5f5f5;
+text-decoration: none;
 
-  border: 1px solid #b3b6b3;
-  border-radius: 0.5rem;
-  margin: 5px;
-  padding: 5px 10px;
-  display: inline;
-  white-space: nowrap ;
-  line-height: 3rem;
+border: 1px solid #b3b6b3;
+border-radius: 0.5rem;
+margin: 5px;
+padding: 5px 10px;
+display: inline;
+white-space: nowrap ;
+line-height: 3rem;
 
-  box-shadow:
-  0 0 0.1rem  0.1rem #fff7f7,   
-  0 0 0.4rem  0.2rem #c4bdbd, 
-  0 0   4rem  0.2rem #4e4d4d,
+box-shadow:
+0 0 0.1rem  0.1rem #fff7f7,   
+0 0 0.4rem  0.2rem #c4bdbd, 
+0 0   4rem  0.2rem #4e4d4d,
 
-  inset 0 0 1.5rem  0.1rem #4e4d4d,
-  inset 0 0 0.4rem  0.05rem #c4bdbd,
-  inset 0 0 0.5rem  0.05rem #fff7f7;
+inset 0 0 1.5rem  0.1rem #4e4d4d,
+inset 0 0 0.4rem  0.05rem #c4bdbd,
+inset 0 0 0.5rem  0.05rem #fff7f7;
 
-  margin: auto;
-  line-height: unset;
-  box-shadow: none;
-  border-radius: 0.0rem;
-  display: flex;
-  justify-content: center;
-  
+margin: auto;
+line-height: unset;
+box-shadow: none;
+border-radius: 0.0rem;
+display: flex;
+justify-content: center;
+width: 100%;
+overflow: hidden;
 }
 .neon-ring a:hover, .neon-ring a:focus {  
   color: #777777;
