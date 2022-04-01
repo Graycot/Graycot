@@ -42,13 +42,12 @@ const styles = `
   inset 0 0 0.5rem  0.05rem #fff7f7;
 
   margin: auto;
-  padding: auto;
   line-height: unset;
   box-shadow: none;
   border-radius: 0.0rem;
   display: flex;
   justify-content: center;
-  width: 100%;
+  
 }
 .neon-ring a:hover, .neon-ring a:focus {  
   color: #777777;
