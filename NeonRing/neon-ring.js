@@ -65,6 +65,10 @@ justify-content: center;
 .neon-bin{
   display: flex;
 }
+
+.neon-bin a {
+  width: 100%;
+}
 `
 // Applies the CSS above to the HTML page
 const styleSheet = document.createElement("style")
