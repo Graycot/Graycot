@@ -4,7 +4,8 @@ export const sites = [
   'https://windigo.neocities.org/',
   'https://swiftyshq.neocities.org/',
   'https://temaisgame.neocities.org/',
-  'https://vaea-v.neocities.org'
+  'https://vaea-v.neocities.org',
+  'https://www.idi.moe/'
 ];
 
 
