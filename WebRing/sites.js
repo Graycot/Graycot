@@ -7,8 +7,6 @@ export const sites = [
   'https://temaisgame.neocities.org/',
   'https://vaea-v.neocities.org',
   'https://www.idi.moe/',
-  'https://seirdy.one/'
+  'https://seirdy.one/',
+  'https://aroace.space/'
 ];
-
-
-
